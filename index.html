@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holadok</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      html {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            dmsans: ["DM Sans", "sans-serif"],
+            sourcesans: ["Source Sans Pro", "sans-serif"],
+          },
+          extend: {
+            boxShadow: {
+              testimoni: "box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1)",
+            },
+            colors: {
+              softblue: "#028ca9",
+              darkblue: "#101C45",
+              strongblue: "#203271",
+              softwhite: "#ffffffcc",
+              tosca: "#9BEAE0",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="h-screen">
+    <!-- container -->
+    <div class="flex flex-col max-w-[1221px] mx-auto">
+      <!-- accessories -->
+      <div
+        class="absolute w-[27rem] h-[800px] bg-tosca -skew-x-6 top-4 right-[29rem] -z-10"></div>
+      <div class="absolute top-40 right-[48rem]">
+        <div
+          class="flex flex-col gap-3 p-5 shadow shadow-testimoni bg-white rounded-lg w-72">
+          <div class="flex justify-between">
+            <div class="flex gap-2 items-center">
+              <img src="./assets/profile.svg" alt="profile" />
+              <span class="font-semibold text-xs leading-5">Jane Doe</span>
+            </div>
+            <img src="./assets/quote.svg" alt="" />
+          </div>
+          <p class="font-sourcesans text-xs leading-5 text-darkblue">
+            “The doctor appointment app has been great for me. Scheduling
+            appointments and getting medication reminders is much easier, and I
+            love the option for virtual consultations. I'd recommend this app to
+            others.”
+          </p>
+        </div>
+      </div>
+      <!-- /accessories -->
+
+      <!-- navbar menu -->
+      <nav class="flex w-11/12 pt-6 font-sourcesans">
+        <div class="flex items-center gap-4 w-[10%]">
+          <img src="./assets/holadok-logo.svg" alt="holadok-logo" />
+          <span>Holadok</span>
+        </div>
+        <ul class="w-[60%]">
+          <li class="inline-block mx-2 px-5 py-2">
+            <a class="hover:text-softblue" href="#">Home</a>
+          </li>
+          <li class="inline-block mx-2 px-5 py-2">
+            <a class="hover:text-softblue" href="#">Features</a>
+          </li>
+          <li class="inline-block mx-2 px-5 py-2">
+            <a class="hover:text-softblue" href="#">About Us</a>
+          </li>
+          <li class="inline-block mx-2 px-5 py-2">
+            <a class="hover:text-softblue" href="#">Blog</a>
+          </li>
+        </ul>
+        <div class="flex justify-end items-start gap-4 w-[30%]">
+          <button class="px-5 py-2 hover:text-softblue">Login</button>
+          <button
+            class="px-5 py-2 border border-black hover:text-white hover:border-softblue hover:bg-softblue">
+            Book Now
+          </button>
+        </div>
+      </nav>
+      <!-- /navbar menu -->
+      <!-- content -->
+      <main class="flex w-full">
+        <div class="flex w-1/2 items-start justify-start pt-28">
+          <div class="flex flex-col w-[460px]">
+            <h1
+              class="font-medium leading-[56px] text-5xl text-darkblue font-dmsans">
+              Get the healthcare you need, when you need it.
+            </h1>
+            <p class="text-darkblue font-dmsans leading-6 text-lg mt-4">
+              Manage all of your healthcare needs in one convenient place
+              &minus; from booking appointments to tracking your health history.
+            </p>
+            <button
+              class="bg-strongblue font-sourcesans py-4 px-9 mt-8 w-60 text-lg text-white hover:bg-white hover:text-strongblue hover:border-strongblue hover:border">
+              Book An Appointment
+            </button>
+          </div>
+        </div>
+        <div class="flex justify-end w-1/2">
+          <img
+            class="-mt-6 mr-20 max-h-[680px]"
+            src="./assets/suster.svg"
+            alt="suster" />
+        </div>
+      </main>
+      <!-- /content -->
+      <footer class="flex gap-8 p-10 bg-strongblue">
+        <div class="flex gap-6 items-start justify-start w-[359px]">
+          <img src="./assets/calendar.svg" alt="bell" />
+          <div class="font-dmsans">
+            <h3 class="font-bold text-lg leading-6 text-white mb-2">
+              Online appointment scheduling
+            </h3>
+            <p class="text-base text-softwhite">
+              Allows users to schedule appointments with their healthcare
+              provider through the app.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-6 items-start justify-start w-[359px]">
+          <img src="./assets/bell.svg" alt="bell" />
+          <div class="font-dmsans">
+            <h3 class="font-bold text-lg leading-6 text-white mb-2">
+              Medication reminders
+            </h3>
+            <p class="text-base text-softwhite">
+              Allows users to schedule appointments with their healthcare
+              provider through the app.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-6 items-start justify-start w-[359px]">
+          <img src="./assets/camera.svg" alt="bell" />
+          <div class="font-dmsans">
+            <h3 class="font-bold text-lg leading-6 text-white mb-2">
+              Virtual consultations
+            </h3>
+            <p class="text-base text-softwhite">
+              Allows users to schedule appointments with their healthcare
+              provider through the app.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- /container -->
+  </body>
+</html>
